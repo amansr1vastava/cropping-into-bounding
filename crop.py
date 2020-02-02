@@ -6,7 +6,7 @@ from PIL import Image
 if not os.path.exists('output'):
     os.makedirs('output')
 
-with open('minor-export.csv','r') as csv_file:
+with open('export.csv','r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
 
     for line in csv_reader:
